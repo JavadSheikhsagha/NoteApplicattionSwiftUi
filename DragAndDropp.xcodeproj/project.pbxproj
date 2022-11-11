@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80C07C36291BE1C200EE349F /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C07C35291BE1C200EE349F /* NoteModel.swift */; };
+		80C07C3C291BEE8100EE349F /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 80C07C3B291BEE8100EE349F /* SwiftyJSON */; };
 		80D3020E291A35860023E5EA /* DragAndDroppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3020D291A35860023E5EA /* DragAndDroppApp.swift */; };
-		80D30210291A35860023E5EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3020F291A35860023E5EA /* ContentView.swift */; };
+		80D30210291A35860023E5EA /* NoteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3020F291A35860023E5EA /* NoteScreen.swift */; };
 		80D30212291A35880023E5EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D30211291A35880023E5EA /* Assets.xcassets */; };
 		80D30215291A35880023E5EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D30214291A35880023E5EA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		80C07C35291BE1C200EE349F /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		80D3020A291A35860023E5EA /* DragAndDropp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragAndDropp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D3020D291A35860023E5EA /* DragAndDroppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDroppApp.swift; sourceTree = "<group>"; };
-		80D3020F291A35860023E5EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80D3020F291A35860023E5EA /* NoteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteScreen.swift; sourceTree = "<group>"; };
 		80D30211291A35880023E5EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80D30214291A35880023E5EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C07C3C291BEE8100EE349F /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				80D3020D291A35860023E5EA /* DragAndDroppApp.swift */,
-				80D3020F291A35860023E5EA /* ContentView.swift */,
+				80D3020F291A35860023E5EA /* NoteScreen.swift */,
+				80C07C35291BE1C200EE349F /* NoteModel.swift */,
 				80D30211291A35880023E5EA /* Assets.xcassets */,
 				80D30213291A35880023E5EA /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = DragAndDropp;
+			packageProductDependencies = (
+				80C07C3B291BEE8100EE349F /* SwiftyJSON */,
+			);
 			productName = DragAndDropp;
 			productReference = 80D3020A291A35860023E5EA /* DragAndDropp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 80D30201291A35860023E5EA;
+			packageReferences = (
+				80C07C3A291BEE8100EE349F /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 80D3020B291A35860023E5EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80D30210291A35860023E5EA /* ContentView.swift in Sources */,
+				80D30210291A35860023E5EA /* NoteScreen.swift in Sources */,
+				80C07C36291BE1C200EE349F /* NoteModel.swift in Sources */,
 				80D3020E291A35860023E5EA /* DragAndDroppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80C07C3A291BEE8100EE349F /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80C07C3B291BEE8100EE349F /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80C07C3A291BEE8100EE349F /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 80D30202291A35860023E5EA /* Project object */;
 }

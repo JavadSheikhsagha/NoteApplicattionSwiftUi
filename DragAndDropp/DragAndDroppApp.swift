@@ -11,7 +11,7 @@ import SwiftUI
 struct DragAndDroppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NoteScreen()
         }
     }
 }
